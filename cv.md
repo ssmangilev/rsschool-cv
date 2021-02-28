@@ -17,7 +17,6 @@ become a JS-developer.
 * Git, Gitlab, Github
 * VSCode, PyCharm
 * Agile, Scrum, Kanban
-* Vue.js (basic knowledge)
 
 ## Code examples:
 [Here you could see my code examples.](https://github.com/ssmangilev)
