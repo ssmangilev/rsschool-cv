@@ -1,1 +1,1 @@
-https://ssmangilev.github.io/rsschool-cv/cv
+https://ssmangilev.github.io/rsschool-cv/index.html
