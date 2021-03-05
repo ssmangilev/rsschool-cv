@@ -1,0 +1,71 @@
+.about_me {
+    text-align: center;
+}
+.name {
+    line-height: 10px;
+    text-align: left;
+    margin-left: 100px;
+}
+.skills {
+    text-align: center;
+}
+.code_examples{
+    text-align: center;
+}
+.experience {
+    text-align: center;
+}
+.education {
+    text-align: center;
+}
+.certificates{
+    text-align: center;
+}
+.certificates li {
+    align-self: auto;
+    vertical-align: top;
+}
+.languages {
+    text-align: center;
+}
+table thead .contacts {
+    text-align: right;
+    margin-left: 200px;
+}
+table thead .photo {
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+nav ul {
+        list-style: none; 
+        margin: 0; 
+        padding-left: 0; 
+}
+nav a {
+    text-decoration: none; 
+}
+nav li {
+    display: inline;
+
+}
+footer .course_info ul{
+    list-style: none; 
+        margin: 0; 
+        padding-left: 0; 
+}
+footer .course_info a {
+    text-decoration: none; 
+}
+footer .course_info li {
+    display: inline;
+
+}
+.wrapper {
+    margin:0px;
+    border-bottom:1px dashed black;
+    border-width:100%;
+}
