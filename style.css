@@ -5,6 +5,7 @@
     line-height: 10px;
     text-align: left;
     margin-left: 100px;
+    width: 30%;
 }
 .skills {
     text-align: center;
@@ -28,18 +29,21 @@
 .languages {
     text-align: center;
 }
-table thead .contacts {
-    text-align: right;
-    margin-left: 200px;
+table .header_table {
+    width:100%;
 }
-table thead .photo {
+.photo {
+    width: 60%;
     text-align: left;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
-
+.contacts {
+    text-align: center;
+    margin-left: 200px;
+    width: 10%;
+}
 nav ul {
         list-style: none; 
         margin: 0; 
@@ -51,6 +55,18 @@ nav a {
 nav li {
     display: inline;
 
+}
+.course_info {
+    width:100%;
+}
+.email {
+    width:50%;
+}
+.course_label {
+    width:40%;
+}
+.github {
+    width:10%;
 }
 footer .course_info ul{
     list-style: none; 
