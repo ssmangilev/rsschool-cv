@@ -61,11 +61,17 @@ nav li {
 }
 .email {
     width:50%;
+<<<<<<< HEAD
     text-align: left;
 }
 .course_label {
     width:40%;
     text-align: left;
+=======
+}
+.course_label {
+    width:40%;
+>>>>>>> 4619de51d3378d04752b453daca7867c2f2faaea
 }
 .github {
     width:10%;
