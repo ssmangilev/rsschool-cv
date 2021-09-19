@@ -4,167 +4,288 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dracula.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <title>Sergei Mangilev CV</title>
 </head>
+
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="name">
-                <h1>Sergei Mangilev</h1>
-                <h3>Software Engineer</h3>
-            </div>
-            <div class="avatar-container">
-                <img class="avatar" src="./img/photo.jpeg" alt="My photo">
-            </div>
-            <div class="contacts">
-                <div class="contacts_element">
-                    <img class="contacts_element_img" src="./img/gmail_black.svg" alt="gmail_black_icon" class="gmail-image">
-                </div>
-                <div class="contacts_element">
-                    <img class="contacts_element_img" src="./img/fb_black.svg" alt="facebook_black_icon" class="facebook-image">
-                </div>
-                <div class="contacts_element">
-                    <img class="contacts_element_img" src="./img/tg_black.svg" alt="telegram_black_icon" class="telegram-image">
-                </div>
-                <div class="contacts_element">
-                    <img class="contacts_element_img"src="./img/linkedin_black.svg" alt="linkedin_black_icon" class="linkedin-image">
-                </div>
-                <div class="contacts_element">
-                    <img class="contacts_element_img" src="./img/vk_black.svg" alt="vk_black_icon" class="vkontakte-image">
-                </div>
-            </div>
-        </header>
-    </div>
-    <div class="wrapper">
-        <main class="main">
-            <section class="goals">
-                 <p class="goals-description">
-                    Hi, my name is Sergey and I'm a junior python developer from Bonn, Germany.
-                    I have an experience with databases (Oracle, MySQL, PostgreSQL) and ETF-instruments (Apache NIFI),
-                    also of course i have an experience with python development.
-                    I would like to know more about JS and become a JS-developer.
-                 </p>
-            </section>
+    <header class="header">
+        <div class="wrapper">
+            <nav class="nav nav-pills flex-column flex-sm-row">
+                <ul class="navigation-list">
+                    <li class="navigation-list__element">
+                        <a href="#skills" class="flex-sm-fill text-sm-center nav-link">
+                            Skills
+                        </a>
+                    </li>
+                    <li class="navigation-list__element">
+                        <a href="#projects" class="flex-sm-fill text-sm-center nav-link">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="navigation-list__element">
+                        <a href="#experience" class="flex-sm-fill text-sm-center nav-link">
+                            Experience
+                        </a>
+                    </li>
+                    <li class="navigation-list__element">
+                        <a href="#languages" class="flex-sm-fill text-sm-center nav-link">
+                            Languages
+                        </a>
+                    </li>
+                    <li class="navigation-list__element">
+                        <a href="#education" class="flex-sm-fill text-sm-center nav-link">
+                            Education
+                        </a>
+                    </li>
+                    <li class="navigation-list__element">
+                        <a href="#code" class="flex-sm-fill text-sm-center nav-link">
+                            Code examples
+                        </a>
+                    </li>
+                    <li class="navigation-list__element">
+                        <a href="#video" class="flex-sm-fill text-sm-center nav-link">
+                            Video
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
             <div class="two-columns">
                 <div class="first-column">
-                    <section class="code-examples">
+                    <section class="contacts" id="#contacts">
+                        <div class="name">
+                            <h1>Sergei Mangilev</h1>
+                            <h3>Software Engineer</h3>
+                        </div>
+                        <div class="avatar-container">
+                            <img class="avatar" src="./img/photo.jpeg" alt="My photo">
+                        </div>
+                        <ul class="contacts-list">
+                            <li class="contacts_element">
+                                <a href="mailto:ssmangilev@gmail.com" class="contact_link">
+                                    <img class="contacts_element_img" src="./img/gmail_black.svg" alt="gmail_black_icon">
+                                </a>
+                            </li>
+                            <li class="contacts_element">
+                                <a href="https://www.facebook.com/ssmangilev/" class="contact_link">
+                                    <img class="contacts_element_img" src="./img/fb_black.svg" alt="facebook_black_icon">
+                                </a>
+                            </li>
+                            <li class="contacts_element">
+                                <a href="tg://resolve?domain=hh8814hh" class="contact_link">
+                                    <img class="contacts_element_img" src="./img/tg_black.svg" alt="telegram_black_icon">
+                                </a>
+                            </li>
+                            <li class="contacts_element">
+                                <a href="https://www.linkedin.com/in/sergei-mangilev-678b6487/" class="contact_link">
+                                    <img class="contacts_element_img" src="./img/linkedin_black.svg" alt="linkedin_black_icon">
+                                </a>
+                            </li>
+                            <li class="contacts_element">
+                                <a href="https://vk.com/horseeeee" class="contact_link">
+                                    <img class="contacts_element_img" src="./img/vk_black.svg" alt="vk_black_icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="second-column">
+                    <article class="goals">
+                        <h2 class="goals__header"> Hi, my name is Sergey </h2>
+                        <p class="goals-description">
+                            and I'm a junior python developer from Bonn, Germany.
+                            I have an experience with databases (Oracle, MySQL, PostgreSQL) and ETF-instruments (Apache NIFI),
+                            also of course i have an experience with python development.
+                            I would like to know more about JS and become a JS-developer.
+                        </p>
+                    </article>
+                </div>
+            </div>
+            <div class="two-columns">
+                <div class="first-column">
+                    <section class="code-examples" id="code">
                         <h2 class="code-examples-header">
                             Code examples:
                         </h2>
-                        <a href="https://github.com/ssmangilev" class="code-examples-link">Here you could see my code examples.</a>
+                        <pre>
+                                <code class="javascript">
+var runLengthEncoding = function(str){
+  let arr = []
+  for (let i=0; i&lt;str.length; i++) {
+    let count = 1;
+    while (i &lt; str.length - 1 &amp;&amp; str[i] == str[i+1]) {
+      i++;
+      count++;
+    }
+    arr.push([count, str[i]]);
+  }
+  return arr;
+}
+                            </code>
+                        </pre>
+                        <a href="https://github.com/ssmangilev" class="code-examples-link">Here you could see more</a>
                     </section>
-                    <section class="work-experience">
+                    <section class="projects" id="projects">
+                        <h2 class="projects-header">
+                            My public recent projects are:
+                        </h2>
+                        <ul class="projects_list list-group">
+                            <li class="projects-list__element list-group-item">
+                                <div class="two-columns">
+                                    <div class="first-column">
+                                        <h2 class="project_name">Virtual Piano</h2>
+                                        <p class="project_description">
+                                            The main projects goal was use a vanilla js for implementing "work with DOM"
+                                            and "work with Audio" features.
+                                            Stack: Javascript.
+                                        </p>
+                                    </div>
+                                    <div class="second-column">
+                                        <a href="https://rolling-scopes-school.github.io/ssmangilev-JSFE2021Q1/virtual-piano/"
+                                            target="_blank" class="project-link">
+                                            <img src="./img/virtual_piano.png" alt="Virtual Piano Project"
+                                                class="project-img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="work-experience" id="experience">
                         <h2 class="work-experience-header">
                             Work experience:
                         </h2>
-                        <ul class="work-experience-list">
-                            <li class="work-experience-list__element">
+                        <ul class="work-experience-list list-group">
+                            <li class="work-experience-list__element list-group-item">
                                 09/2020 - Present Junior Python Developer PROUNIX GMBH, Bonn, Germany
-                                <ul class="work-experience-sublist">
-                                    <li class="work-experience-sublist__element">
+                                <ul class="work-experience-sublist list-group">
+                                    <li class="work-experience-sublist__element list-group-item">
                                         Development of new Django modules in accordance with the requirements.
                                     </li>
-                                    <li class="work-experience-sublist__element">
+                                    <li class="work-experience-sublist__element list-group-item">
                                         Development of new Vue.js modules.
                                     </li>
-                                    <li class="work-experience-sublist__element">
+                                    <li class="work-experience-sublist__element list-group-item">
                                         Unit Tests writing.
                                     </li>
                                 </ul>
                             </li>
-                            <li class="work-experience-list__element">
+                            <li class="work-experience-list__element list-group-item">
                                 04/2019 - 09/2020 Senior Support Engineer MTS IT, Samara, Russia
-                                <ul class="work-experience-sublist">
-                                    <li class="work-experience-sublist__element">
+                                <ul class="work-experience-sublist list-group">
+                                    <li class="work-experience-sublist__element list-group-item">
                                         Working with high-load distributed billing systems.
                                     </li>
-                                    <li class="work-experience-sublist__element">
+                                    <li class="work-experience-sublist__element list-group-item">
                                         Performing routine maintenance and emergency work on customer clusters.
                                     </li>
-                                    <li class="work-experience-sublist__element">
-                                        Drafting requirements of a development with the customer’s representatives.  
+                                    <li class="work-experience-sublist__element list-group-item">
+                                        Drafting requirements of a development with the customer’s representatives.
                                     </li>
-                                    <li class="work-experience-sublist__element">
-                                        Development of PL/SQL packages, procedures,jobs in accordance with the requirements.
+                                    <li class="work-experience-sublist__element list-group-item">
+                                        Development of PL/SQL packages, procedures,jobs in accordance with the
+                                        requirements.
                                     </li>
-                                    <li class="work-experience-sublist__element">
-                                        Bug analysis and fixing with strict SLA (development of temporary and permanent solutions).
+                                    <li class="work-experience-sublist__element list-group-item">
+                                        Bug analysis and fixing with strict SLA (development of temporary and permanent
+                                        solutions).
                                     </li>
-                                    <li class="work-experience-sublist__element">
+                                    <li class="work-experience-sublist__element list-group-item">
                                         Participation in installations of new software releases at customer sites.
                                     </li>
-                                    <li class="work-experience-sublist__element">
-                                        Delivery of new functionality to the customer.  
+                                    <li class="work-experience-sublist__element list-group-item">
+                                        Delivery of new functionality to the customer.
                                     </li>
-                                    <li class="work-experience-sublist__element">
-                                        Development of MVP.  
+                                    <li class="work-experience-sublist__element list-group-item">
+                                        Development of MVP.
                                     </li>
-                                    <li class="work-experience-sublist__element">
-                                        Working with Oracle DB, writing complex queries on SQL, PL/SQL, using Oracle hints, explaining queries plan, and optimizing queries.  
+                                    <li class="work-experience-sublist__element list-group-item">
+                                        Working with Oracle DB, writing complex queries on SQL, PL/SQL, using Oracle
+                                        hints, explaining queries plan, and optimizing queries.
                                     </li>
-                                    <li class="work-experience-sublist__element">
-                                        Writing automation scripts on Python  
+                                    <li class="work-experience-sublist__element list-group-item">
+                                        Writing automation scripts on Python
                                     </li>
                                 </ul>
                             </li>
-                            <li class="work-experience-list__element">
+                            <li class="work-experience-list__element list-group-item">
                                 06/2018 - 04/2019 Support Engineer Nexign, Samara, Russia
                                 <ul class="work-experience-sublist">
-                                    <li class="work-experience-sublist__element">
+                                    <li class="work-experience-sublist__element list-group-item">
                                         Working with high-load distributed systems.
                                     </li>
-                                    <li class="work-experience-sublist__element">
+                                    <li class="work-experience-sublist__element list-group-item">
                                         Management a team of 10 members.
                                     </li>
-                                    <li class="work-experience-sublist__element">
-                                        Bug analysis and fixing in accordance with strict SLA (developing of temporary solutions).
+                                    <li class="work-experience-sublist__element list-group-item">
+                                        Bug analysis and fixing in accordance with strict SLA (developing of temporary
+                                        solutions).
                                     </li>
-                                    <li class="work-experience-sublist__element">
+                                    <li class="work-experience-sublist__element list-group-item">
                                         Communication with customer management.
                                     </li>
-                                    <li class="work-experience-sublist__element">
+                                    <li class="work-experience-sublist__element list-group-item">
                                         Writing How-to articles in Atlassian Confluence.
                                     </li>
-                                    <li class="work-experience-sublist__element">
+                                    <li class="work-experience-sublist__element list-group-item">
                                         Working with RHEL.
                                     </li>
-                                    <li class="work-experience-sublist__element">
+                                    <li class="work-experience-sublist__element list-group-item">
                                         Working with Oracle DB, writing complex queues on SQL, PL/SQL.
                                     </li>
-                                    <li class="work-experience-sublist__element">
+                                    <li class="work-experience-sublist__element list-group-item">
                                         Bug reporting in Atlassian Jira.
                                     </li>
                                 </ul>
                             </li>
                         </ul>
                     </section>
-                    <section class="education">
+                    <section class="education" id="education">
                         <h2 class="education__header">
-                            Education
+                            Education:
                         </h2>
-                        <ul class="education-list">
-                            <li class="education-list__element">
-                                2007-2012 Diploma in computer science and computer engineering (Samara State Technical University, Faculty of automation control and information processing systems)
+                        <ul class="education-list list-group">
+                            <li class="education-list__element list-group-item">
+                                2007-2012 Diploma in computer science and computer engineering (Samara State Technical
+                                University, Faculty of automation control and information processing systems)
                             </li>
-                            <li class="education-list__element">
+                            <li class="education-list__element list-group-item">
                                 2015-2018 BA in Law (Samara State University, Faculty of Law)
                             </li>
                         </ul>
                     </section>
-                    <section class="languages">
+                    <section class="selfpresentation">
+                        <h2 class="self_presentation_header">
+                            Self-presentation on English:
+                        </h2>
+                        <div class="video">
+                            <iframe id="video" width="640" height="480" src="https://www.youtube.com/embed/YadHWnK6vPY"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </section>
+                    <section class="languages" id="languages">
                         <h2 class="languages__header">
-                            Languages
+                            Languages:
                         </h2>
                         <ul class="languages-list">
                             <li class="languages_list__element">
-                                Russian - Native
+                                <h4>Russian - Native</h4>
                             </li>
                             <li class="languages_list__element">
-                                English - B1
+                                <h4>English - B1</h4>
                             </li>
                             <li class="languages_list__element">
-                                German - A2
+                                <h4>German - A2</h4>
                             </li>
                         </ul>
                     </section>
@@ -172,134 +293,142 @@
                 <div class="second-column">
                     <section class="certificates">
                         <h2 class="certificates__header">
-                            Certificates
+                            Certificates:
                         </h2>
-                        <ul class="certificates-list">
-                            <li class="certificates-list__element">
-                                <a href="https://stepik.org/cert/105590" class="certificates-list_element__link">Databases</a>
+                        <ul class="certificates-list list-group">
+                            <li class="certificates-list__element list-group-item">
+                                <a href="https://stepik.org/cert/105590"
+                                    class="certificates-list_element__link">Databases</a>
                             </li>
-        
-                            <li class="certificates-list__element">
-                                <a href="https://stepik.org/cert/261626" class="certificates-list_element__link">Linux</a>
+
+                            <li class="certificates-list__element list-group-item">
+                                <a href="https://stepik.org/cert/261626"
+                                    class="certificates-list_element__link">Linux</a>
                             </li>
-        
-                            <li class="certificates-list__element">
-                                <a href="https://stepik.org/cert/261231" class="certificates-list_element__link">Web-technologies</a>
+
+                            <li class="certificates-list__element list-group-item">
+                                <a href="https://stepik.org/cert/261231"
+                                    class="certificates-list_element__link">Web-technologies</a>
                             </li>
-        
-                            <li class="certificates-list__element">
-                                <a href="https://stepik.org/cert/165520" class="certificates-list_element__link">Python programming</a>
+
+                            <li class="certificates-list__element list-group-item">
+                                <a href="https://stepik.org/cert/165520" class="certificates-list_element__link">Python
+                                    programming</a>
                             </li>
                         </ul>
                     </section>
-                    <section class="skills">
+                    <section class="skills" id="skills">
                         <h2 class="skills-header">
                             My skills are:
                         </h2>
-                        <ul class="skills-list">
-                            <li class="skills-element">
+                        <ul class="skills-list list-group">
+                            <li class="skills-element list-group-item">
                                 Python 3.X, Django
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 Django Rest Framework
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 Celery
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 Redis
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 Javascript
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 Vue.js
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 Agile
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 Scrum
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 Kanban
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 REST
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 SOAP
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 SQL, PL/SQL, PgSQL
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 Oracle, Postgres, MongoDB
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 Debian, Ubuntu, Kali
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 RHEL, CentOS, Fedora
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 Windows Server 2003-2018
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 Jira, TFS
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 GIT
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 Postman
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 RabbitMQ, MSMQ, Kafka
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 Networks
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 OSI-model
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 TCP/IP
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 Manual Testing
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 Code review
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 Bash-scripting
                             </li>
-                            <li class="skill-element">
+                            <li class="skill-element list-group-item">
                                 Apache.NIFI, DB ETF
                             </li>
                         </ul>
                     </section>
                 </div>
             </div>
-        </main>
-    </div>
-    <div class="wrapper">
-        <footer class="footer">
-            <div class="email">
-                <a href="mailto:ssmangilev@gmail.com" class="footer-email">ssmangilev@gmail.com</a>
-            </div>
-            <div class="course-label">
-                <a href="https://rs.school/js/" class="course-link">
-                    <img src="./img/rsschool.svg" alt="RS School Label" class="course-label-img">
-                </a>
-            </div>
-            <div class="github">
-                <a href="https://github.com/ssmangilev" class="github-footer-link">
-                    <img src="./img/gh_black.svg" alt="Github logo" class="github-footer-link-image">
-                </a>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </main>
+
+    <footer class="footer border-top">
+        <div class="wrapper">
+            <nav class="footer__nav">
+                <div class="email">
+                    <a href="mailto:ssmangilev@gmail.com" class="footer-email">ssmangilev@gmail.com</a>
+                </div>
+                <div class="course-label">
+                    <a href="https://rs.school/js/" class="course-link">
+                        <img src="./img/rsschool.svg" alt="RS School Label" class="course-label-img">
+                    </a>
+                </div>
+                <div class="github">
+                    <a href="https://github.com/ssmangilev" class="github-footer-link">
+                        <img src="./img/gh_black.svg" alt="Github logo" class="github-footer-link-image">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </footer>
 </body>
+
 </html>
